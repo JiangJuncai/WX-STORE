@@ -1,25 +1,16 @@
-// miniprogram/pages/profile/profile.js
+// miniprogram/pages/login/login.js
 const app = getApp()
 
 Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    avatarUrl: '',
-    nickName: ''
-  },
+  data: {},
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
-    this.setData({
-      avatarUrl: app.globalData.userInfo.avatarUrl,
-      nickName: app.globalData.userInfo.nickName
-    })
-    console.log(this.data)
-  },
+  onLoad: function(options) {},
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -54,5 +45,15 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {}
+  onShareAppMessage: function() {},
+  getUserInfo: function() {
+    wx.getUserInfo({
+      success: res => {
+        app.globalData.userInfo = res.userInfo
+        wx.switchTab({
+          url: '../index/index'
+        })
+      }
+    })
+  }
 })

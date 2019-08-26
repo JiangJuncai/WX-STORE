@@ -1,7 +1,15 @@
 /**app.wxss**/
+page {
+  box-sizing: border-box;
+}
 .container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
+  background: #f8f8f8;
+  padding: 0rpx 20rpx;
+}
+.shadow {
+  box-shadow: 0 0 12rpx #bcbcbc;
+  border-radius: 20rpx;
 }

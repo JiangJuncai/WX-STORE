@@ -1,2 +1,44 @@
-<!--miniprogram/pages/profile/profile.wxml-->
-<text>miniprogram/pages/profile/profile.wxml</text>
+<!-- miniprogram/pages/profile/profile.wxml -->
+<view class="container">
+  <view class="userInfo shadow">
+    <image src="{{avatarUrl}}" />
+    <text>{{nickName}}</text>
+  </view>
+  <view class="p-menu shadow">
+    <view class="p-menu-item">
+      <image src="../../images/dingdan.svg" />
+      <text>订单</text>
+    </view>
+    <view class="p-menu-item">
+      <image src="../../images/youhuiquan.svg" />
+      <text>优惠券</text>
+    </view>
+    <view class="p-menu-item">
+      <image src="../../images/vip.svg" />
+      <text>VIP</text>
+    </view>
+    <view class="p-menu-item">
+      <image src="../../images/lishi.svg" />
+      <text>历史</text>
+    </view>
+  </view>
+  <view class="p-service shadow">
+    <view class="p-service-title">
+      <text>我的服务</text>
+    </view>
+    <view class="p-service-menu">
+      <view class="p-service-item">
+        <image src="../../images/bangzhu.svg" />
+        <text>帮助与反馈</text>
+      </view>
+      <view class="p-service-item">
+        <image src="../../images/kefu.svg" />
+        <text>联系客服</text>
+      </view>
+      <view class="p-service-item">
+        <image src="../../images/huodong.svg" />
+        <text>店铺活动</text>
+      </view>
+    </view>
+  </view>
+</view>

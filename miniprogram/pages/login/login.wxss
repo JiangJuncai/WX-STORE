@@ -1,0 +1,21 @@
+/* miniprogram/pages/login/login.wxss */
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login image {
+  width: 360rpx;
+  height: 360rpx;
+  border-radius: 50%;
+}
+.login text {
+  font-size: 48rpx;
+  margin: 32rpx 0 200rpx;
+}
+.login button {
+  width: 60vw;
+  background-color: #ffd000;
+}

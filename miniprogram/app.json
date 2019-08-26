@@ -1,16 +1,16 @@
 {
-  "pages": ["pages/index/index", "pages/order/order", "pages/profile/profile"],
+  "pages": ["pages/index/index", "pages/order/order", "pages/profile/profile", "pages/login/login"],
   "window": {
     "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fffff",
-    "navigationBarTitleText": "WXstore",
+    "navigationBarTitleText": "南京熟食店",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "backgroundColor": "#ffffff",
-    "color": "#777777",
-    "selectedColor": "#a77d6e",
+    "color": "#666666",
+    "selectedColor": "#FFD000",
     "list": [
       {
         "pagePath": "pages/index/index",

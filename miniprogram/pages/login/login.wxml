@@ -1,0 +1,6 @@
+<!-- miniprogram/pages/login/login.wxml -->
+<view class="login">
+  <image src="../../images/logo.jpg" alt=""></image>
+  <text>实惠美味，尽在其中</text>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">进入</button>
+</view>

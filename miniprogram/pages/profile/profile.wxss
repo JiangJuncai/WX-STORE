@@ -1,1 +1,65 @@
 /* miniprogram/pages/profile/profile.wxss */
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+.userInfo {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  background-color: #ffd000;
+  margin-top: 15rpx;
+}
+.userInfo image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  margin: 0 20rpx 0 40rpx;
+}
+.userInfo text {
+  font-size: 40rpx;
+}
+.p-menu {
+  display: flex;
+  width: calc(100vw - 40rpx);
+  height: 180rpx;
+  margin: 30rpx 0;
+  background-color: #fff;
+}
+.p-menu-item,
+.p-service-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p-menu-item image {
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: 20rpx;
+}
+.p-menu-item text {
+  font-size: 26rpx;
+}
+.p-service {
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+  background-color: #fff;
+}
+.p-service-menu {
+  display: flex;
+  width: calc(100vw - 40rpx);
+  height: 160rpx;
+}
+.p-service-title {
+  margin: 20rpx 30rpx 0;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.p-service-item image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-bottom: 20rpx;
+}
