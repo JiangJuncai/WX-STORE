@@ -7,9 +7,9 @@ page {
   display: flex;
   flex-direction: column;
   background: #f8f8f8;
-  padding: 0rpx 20rpx;
+  color: #333333;
 }
 .shadow {
-  box-shadow: 0 0 12rpx #bcbcbc;
+  box-shadow: 0 0 20rpx #eeeeee;
   border-radius: 20rpx;
 }

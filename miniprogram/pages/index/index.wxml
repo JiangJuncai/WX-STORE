@@ -1,2 +1,73 @@
 <!-- index.wxml -->
-<view class="container">index</view>
+<view class="container home">
+  <view>
+    <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}" circular="{{true}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image class="swiper-image" src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="store">
+    <image class="store-logo" src="../../images/logo.png" />
+    <view class="store-info">
+      <view class="store-name">
+        <text>南京熟食店</text>
+        <view class="store-state shadow">正在营业</view>
+      </view>
+      <text class="store-desc">物美价廉·美味实惠</text>
+      <view class="store-ad">
+        <view class="ad-content">公告</view>
+        <text>预约点菜，快捷方便</text>
+      </view>
+    </view>
+  </view>
+  <view class="store-connection">
+    <view class="store-address">
+      <image src="../../images/location.svg" />
+      <text>河南省商丘市宁陵县孔集乡宋胡同东村惠万家超市对面</text>
+    </view>
+    <view class="map-phone">
+      <view class="mp-item">
+        <image class="map-icon" src="../../images/daohang.svg" />
+        <text>导航</text>
+      </view>
+      <view class="line"></view>
+      <view class="mp-item">
+        <image class="phone-icon" src="../../images/dianhua.svg" />
+        <text>电话</text>
+      </view>
+    </view>
+  </view>
+  <view class="h-menu">
+    <view class="h-menu-item">
+      <image src="../../images/home-buy.svg" />
+      <view class="h-menu-info">
+        <text class="h-menu-title">在线点餐</text>
+        <text class="h-menu-content">不用排队 到店即取</text>
+      </view>
+    </view>
+    <view class="h-menu-item">
+      <image src="../../images/home-pay.svg" />
+      <view class="h-menu-info">
+        <text class="h-menu-title">买单支付</text>
+        <text class="h-menu-content">在线支付 买单快捷</text>
+      </view>
+    </view>
+    <view class="h-menu-item">
+      <image src="../../images/home-vip.svg" />
+      <view class="h-menu-info">
+        <text class="h-menu-title">会员中心</text>
+        <text class="h-menu-content">专属VIP福利</text>
+      </view>
+    </view>
+    <view class="h-menu-item">
+      <image src="../../images/home-order.svg" />
+      <view class="h-menu-info">
+        <text class="h-menu-title">全部订单</text>
+        <text class="h-menu-content">订单查询一目了然</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,14 +1,12 @@
 /* miniprogram/pages/profile/profile.wxss */
 .profile {
-  display: flex;
-  flex-direction: column;
+  padding: 0rpx 20rpx;
 }
 .userInfo {
   height: 25vh;
   display: flex;
   align-items: center;
   background-color: #ffd000;
-  margin-top: 15rpx;
 }
 .userInfo image {
   width: 140rpx;
@@ -33,19 +31,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 24rpx;
 }
 .p-menu-item image {
   width: 64rpx;
   height: 64rpx;
   margin-bottom: 20rpx;
 }
-.p-menu-item text {
-  font-size: 26rpx;
-}
 .p-service {
   display: flex;
   flex-direction: column;
-  font-size: 26rpx;
   background-color: #fff;
 }
 .p-service-menu {

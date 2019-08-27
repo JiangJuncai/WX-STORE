@@ -26,7 +26,7 @@
       },
       {
         "pagePath": "pages/profile/profile",
-        "text": "个人",
+        "text": "我的",
         "iconPath": "images/profile.png",
         "selectedIconPath": "images/profile-active.png"
       }

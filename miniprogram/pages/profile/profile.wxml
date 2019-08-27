@@ -1,5 +1,5 @@
 <!-- miniprogram/pages/profile/profile.wxml -->
-<view class="container">
+<view class="container profile">
   <view class="userInfo shadow">
     <image src="{{avatarUrl}}" />
     <text>{{nickName}}</text>
