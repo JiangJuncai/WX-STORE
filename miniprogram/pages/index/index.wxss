@@ -31,6 +31,7 @@
   display: flex;
   align-items: center;
   font-size: 40rpx;
+  font-weight: bold;
 }
 .store-state {
   margin-left: 20rpx;
@@ -39,6 +40,7 @@
   padding: 0 5rpx;
   text-align: center;
   font-size: 24rpx;
+  font-weight: normal;
   color: #ffffff;
   background-color: #ffbd00;
   border-radius: 10rpx;
@@ -127,4 +129,55 @@
 }
 .h-menu-content {
   color: #666666;
+}
+.recommend {
+  display: flex;
+  flex-direction: column;
+}
+.recommend-title {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 30rpx 20rpx;
+  border-bottom: 1rpx solid #eeeeee;
+}
+.recommend-title image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+.recommend-title text {
+  font-size: 32rpx;
+}
+.recommend-scrollx {
+  width: calc(100vw - 40rpx);
+  padding: 10rpx 20rpx;
+  white-space: nowrap;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.recommend-foods {
+  display: inline-block;
+  padding: 20rpx 10rpx;
+}
+.recommend-foods image {
+  width: 200rpx;
+  height: 200rpx;
+}
+.recommend-foodinfo {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+}
+.recommend-foodname {
+  margin-right: 20rpx;
+}
+.rmb {
+  color: #ff4d39;
+  font-weight: bolder;
+}
+.recommend-food-price {
+  color: #ff4d39;
 }

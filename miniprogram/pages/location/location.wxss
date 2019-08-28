@@ -1,0 +1,5 @@
+/* miniprogram/pages/location/location.wxss */
+.map {
+  width: 100vw;
+  height: 100vh;
+}

@@ -1,5 +1,11 @@
 {
-  "pages": ["pages/index/index", "pages/order/order", "pages/profile/profile", "pages/login/login"],
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/profile/profile",
+    "pages/login/login",
+    "pages/location/location"
+  ],
   "window": {
     "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",

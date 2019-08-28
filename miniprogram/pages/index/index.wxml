@@ -29,12 +29,12 @@
       <text>河南省商丘市宁陵县孔集乡宋胡同东村惠万家超市对面</text>
     </view>
     <view class="map-phone">
-      <view class="mp-item">
+      <view class="mp-item" bind:tap="goLocation">
         <image class="map-icon" src="../../images/daohang.svg" />
         <text>导航</text>
       </view>
       <view class="line"></view>
-      <view class="mp-item">
+      <view class="mp-item" bind:tap="makePhoneCall">
         <image class="phone-icon" src="../../images/dianhua.svg" />
         <text>电话</text>
       </view>
@@ -44,11 +44,11 @@
     <view class="h-menu-item">
       <image src="../../images/home-buy.svg" />
       <view class="h-menu-info">
-        <text class="h-menu-title">在线点餐</text>
+        <text class="h-menu-title">预约点菜</text>
         <text class="h-menu-content">不用排队 到店即取</text>
       </view>
     </view>
-    <view class="h-menu-item">
+    <view class="h-menu-item" bind:tap="payMoney">
       <image src="../../images/home-pay.svg" />
       <view class="h-menu-info">
         <text class="h-menu-title">买单支付</text>
@@ -62,12 +62,28 @@
         <text class="h-menu-content">专属VIP福利</text>
       </view>
     </view>
-    <view class="h-menu-item">
+    <view class="h-menu-item" bind:tap="goOrderPage">
       <image src="../../images/home-order.svg" />
       <view class="h-menu-info">
         <text class="h-menu-title">全部订单</text>
         <text class="h-menu-content">订单查询一目了然</text>
       </view>
     </view>
+  </view>
+  <view class="recommend">
+    <view class="recommend-title">
+      <image src="../../images/tuijian.svg" />
+      <text>店长推荐</text>
+    </view>
+    <scroll-view class="recommend-scrollx" scroll-x="{{true}}" enable-flex>
+      <view class="recommend-foods" wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="index">
+        <image src="../../images/zhutourou.jpg" />
+        <view class="recommend-foodinfo">
+          <text class="recommend-foodname">猪头肉</text>
+          <text class="rmb">￥</text>
+          <text class="recommend-food-price">36</text>
+        </view>
+      </view>
+    </scroll-view>
   </view>
 </view>

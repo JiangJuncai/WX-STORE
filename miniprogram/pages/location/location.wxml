@@ -1,0 +1,4 @@
+<!-- miniprogram/pages/location/location.wxml -->
+<view class="container">
+  <map class="map" show-scale show-compass show-location enable-3D enable-overlooking longitude="115.4045748711" latitude="34.58323656322647" markers="{{markers}}" />
+</view>
