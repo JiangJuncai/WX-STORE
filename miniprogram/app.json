@@ -4,7 +4,10 @@
     "pages/order/order",
     "pages/profile/profile",
     "pages/login/login",
-    "pages/location/location"
+    "pages/location/location",
+    "pages/pay/pay",
+    "pages/foodMenu/foodMenu",
+    "pages/coupon/coupon"
   ],
   "window": {
     "backgroundColor": "#ffffff",

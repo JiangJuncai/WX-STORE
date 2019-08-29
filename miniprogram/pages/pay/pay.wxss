@@ -1,0 +1,41 @@
+/* miniprogram/pages/pay/pay.wxss */
+.pay {
+  height: 100vh;
+}
+.pay-ad {
+  width: 100vw;
+  height: 220rpx;
+}
+.pay-to {
+  margin: 40rpx 50rpx;
+  font-size: 32rpx;
+}
+.pay-content {
+  margin: 0 20rpx;
+  background-color: #fff;
+}
+.pay-title {
+  margin: 60rpx 30rpx;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+}
+.money-number {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 80rpx 0;
+  font-size: 96rpx;
+  color: #999999;
+  border-top: 1rpx dashed #eee;
+  border-bottom: 1rpx solid #eee;
+}
+.pay-button {
+  padding: 30rpx;
+  font-size: 32rpx;
+}
+.pay-btn {
+  margin: 40rpx 0;
+  font-size: 32rpx;
+  background-color: #fff;
+}

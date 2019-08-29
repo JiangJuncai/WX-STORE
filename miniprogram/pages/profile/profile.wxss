@@ -1,5 +1,6 @@
 /* miniprogram/pages/profile/profile.wxss */
 .profile {
+  height: 100vh;
   padding: 0rpx 20rpx;
 }
 .userInfo {

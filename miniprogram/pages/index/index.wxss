@@ -1,6 +1,5 @@
 /**index.wxss**/
 .home {
-  width: 100%;
   font-size: 24rpx;
   background-color: #fff;
 }

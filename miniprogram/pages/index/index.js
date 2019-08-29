@@ -21,20 +21,19 @@ Page({
       url: '../order/order'
     })
   },
-  payMoney: function() {
-    wx.requestPayment({
-      timeStamp: '',
-      nonceStr: '',
-      package: '',
-      signType: 'MD5',
-      paySign: '',
-      success: function(res) {
-        console.log(123)
-      },
-      fail: function(res) {
-        console.log(444)
-      },
-      complete: function(res) {}
+  goPayPage: function() {
+    wx.navigateTo({
+      url: '../pay/pay'
+    })
+  },
+  goCouponPage: function() {
+    wx.navigateTo({
+      url: '../coupon/coupon'
+    })
+  },
+  goFoodMenuPage: function() {
+    wx.navigateTo({
+      url: '../foodMenu/foodMenu'
     })
   }
 })

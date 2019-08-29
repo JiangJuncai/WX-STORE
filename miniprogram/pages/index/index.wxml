@@ -41,25 +41,25 @@
     </view>
   </view>
   <view class="h-menu">
-    <view class="h-menu-item">
+    <view class="h-menu-item" bind:tap="goFoodMenuPage">
       <image src="../../images/home-buy.svg" />
       <view class="h-menu-info">
         <text class="h-menu-title">预约点菜</text>
         <text class="h-menu-content">不用排队 到店即取</text>
       </view>
     </view>
-    <view class="h-menu-item" bind:tap="payMoney">
+    <view class="h-menu-item" bind:tap="goPayPage">
       <image src="../../images/home-pay.svg" />
       <view class="h-menu-info">
         <text class="h-menu-title">买单支付</text>
         <text class="h-menu-content">在线支付 买单快捷</text>
       </view>
     </view>
-    <view class="h-menu-item">
-      <image src="../../images/home-vip.svg" />
+    <view class="h-menu-item" bind:tap="goCouponPage">
+      <image src="../../images/home-youhuiquan.svg" />
       <view class="h-menu-info">
-        <text class="h-menu-title">会员中心</text>
-        <text class="h-menu-content">专属VIP福利</text>
+        <text class="h-menu-title">优惠福利</text>
+        <text class="h-menu-content">线上点菜专属福利</text>
       </view>
     </view>
     <view class="h-menu-item" bind:tap="goOrderPage">
