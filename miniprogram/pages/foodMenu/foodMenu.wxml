@@ -1,2 +1,43 @@
-<!--miniprogram/pages/foodMenu/foodMenu.wxml-->
-<text>miniprogram/pages/foodMenu/foodMenu.wxml</text>
+<!-- miniprogram/pages/foodMenu/foodMenu.wxml -->
+<view class="food-menu">
+  <view class="left">
+    <view wx:for="{{category}}" bind:tap="selectCate" data-index="{{index}}" class="category {{currentIndex === index ? 'active' : ''}}" wx:key="{{index}}">
+      {{item}}
+    </view>
+  </view>
+  <view class="right">
+    <view class="title">{{category[currentIndex]}}</view>
+    <view class="food-list">
+      <view class="food-item">
+        <image class="food-image" src="../../images/zhutourou.jpg" />
+        <view class="food-info">
+          <view class="food-name">猪头肉</view>
+          <view class="sold-count">月售100份</view>
+          <view class="food-price">
+            <view class="price">￥18/份</view>
+            <view class="buy-count">
+              <image src="../../images/reduce.svg" />
+              <text>0</text>
+              <image src="../../images/add.svg" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="food-item">
+        <image class="food-image" src="../../images/zhutourou.jpg" />
+        <view class="food-info">
+          <view class="food-name">猪头肉</view>
+          <view class="sold-count">月售100份</view>
+          <view class="food-price">
+            <view class="price">￥18/份</view>
+            <view class="buy-count">
+              <image src="../../images/reduce.svg" />
+              <text>0</text>
+              <image src="../../images/add.svg" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

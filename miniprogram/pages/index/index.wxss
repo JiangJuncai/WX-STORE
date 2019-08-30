@@ -41,8 +41,13 @@
   font-size: 24rpx;
   font-weight: normal;
   color: #ffffff;
-  background-color: #ffbd00;
   border-radius: 10rpx;
+}
+.open {
+  background-color: #ffbd00;
+}
+.close {
+  background-color: #ff5100;
 }
 .store-desc {
   margin: 15rpx 0;

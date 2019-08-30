@@ -14,7 +14,9 @@
     <view class="store-info">
       <view class="store-name">
         <text>南京熟食店</text>
-        <view class="store-state shadow">正在营业</view>
+        <view class="store-state {{isOpen ? 'open' : 'close'}} shadow">
+          {{isOpen ? '正在营业' : '打烊了'}}
+        </view>
       </view>
       <text class="store-desc">物美价廉·美味实惠</text>
       <view class="store-ad">
@@ -76,12 +78,12 @@
       <text>店长推荐</text>
     </view>
     <scroll-view class="recommend-scrollx" scroll-x="{{true}}" enable-flex>
-      <view class="recommend-foods" wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="index">
-        <image src="../../images/zhutourou.jpg" />
+      <view class="recommend-foods" wx:for="{{recommends}}" wx:key="index">
+        <image src="{{item.img}}" lazy-load />
         <view class="recommend-foodinfo">
-          <text class="recommend-foodname">猪头肉</text>
+          <text class="recommend-foodname">{{item.name}}</text>
           <text class="rmb">￥</text>
-          <text class="recommend-food-price">36</text>
+          <text class="recommend-food-price">{{item.number}}</text>
         </view>
       </view>
     </scroll-view>
