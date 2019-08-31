@@ -22,6 +22,10 @@ Page({
         showCancel: false,
         success(res) {}
       })
+    } else {
+      this.setData({
+        isOpen: true
+      })
     }
 
     getRecommends()

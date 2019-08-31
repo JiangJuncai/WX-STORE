@@ -1,43 +1,38 @@
 <!-- miniprogram/pages/foodMenu/foodMenu.wxml -->
 <view class="food-menu">
   <view class="left">
-    <view wx:for="{{category}}" bind:tap="selectCate" data-index="{{index}}" class="category {{currentIndex === index ? 'active' : ''}}" wx:key="{{index}}">
-      {{item}}
+    <view wx:for="{{categories}}" bind:tap="selectCate" data-index="{{index}}" class="category {{currentIndex === index ? 'active' : ''}}" wx:key="{{index}}">
+      <text>{{item}}</text>
+      <view class="cate-count" hidden="{{cateTotal[item] === 0}}">{{cateTotal[item]}}</view>
     </view>
   </view>
   <view class="right">
-    <view class="title">{{category[currentIndex]}}</view>
-    <view class="food-list">
-      <view class="food-item">
-        <image class="food-image" src="../../images/zhutourou.jpg" />
-        <view class="food-info">
-          <view class="food-name">猪头肉</view>
-          <view class="sold-count">月售100份</view>
-          <view class="food-price">
-            <view class="price">￥18/份</view>
-            <view class="buy-count">
-              <image src="../../images/reduce.svg" />
-              <text>0</text>
-              <image src="../../images/add.svg" />
-            </view>
-          </view>
-        </view>
-      </view>
-      <view class="food-item">
-        <image class="food-image" src="../../images/zhutourou.jpg" />
-        <view class="food-info">
-          <view class="food-name">猪头肉</view>
-          <view class="sold-count">月售100份</view>
-          <view class="food-price">
-            <view class="price">￥18/份</view>
-            <view class="buy-count">
-              <image src="../../images/reduce.svg" />
-              <text>0</text>
-              <image src="../../images/add.svg" />
-            </view>
-          </view>
-        </view>
-      </view>
+    <view class="title">
+      <text>{{categories[currentIndex]}}</text>
     </view>
+    <scroll-view scroll-y class="scroll">
+      <view class="food-item" wx:for="{{foods[currentMenu]}}" wx:key="{{index}}">
+        <image-loader class="food-image" original-image="{{item.img}}" mode='widthFix' default-image="../../images/img-load.gif" width="180rpx" height="180rpx" />
+        <view class="food-info">
+          <view class="food-name">{{item.name}}</view>
+          <view class="sold-count">月售{{item.soldCount}}份</view>
+          <view class="food-price">
+            <view class="price">￥{{item.price}}/份</view>
+            <view class="buy-count">
+              <image hidden="{{item.count === 0}}" src="../../images/reduce.svg" data-index="{{index}}" data-func="reduce" bind:tap="changeCount" />
+              <text hidden="{{item.count === 0}}">{{item.count}}</text>
+              <image src="../../images/add.svg" data-index="{{index}}" data-func="add" bind:tap="changeCount" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
   </view>
+</view>
+<view class="cart">
+  <view class="cart-left">
+    <image src="../../images/cart.svg" />
+    <text class="total">￥32</text>
+  </view>
+  <view class="cart-right">选好了</view>
 </view>
