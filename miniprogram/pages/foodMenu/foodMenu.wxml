@@ -1,7 +1,13 @@
 <!-- miniprogram/pages/foodMenu/foodMenu.wxml -->
 <view class="food-menu">
   <view class="left">
-    <view wx:for="{{categories}}" bind:tap="selectCate" data-index="{{index}}" class="category {{currentIndex === index ? 'active' : ''}}" wx:key="{{index}}">
+    <view
+      wx:for="{{categories}}"
+      bind:tap="selectCate"
+      data-index="{{index}}"
+      class="category {{currentIndex === index ? 'active' : ''}}"
+      wx:key="{{index}}"
+    >
       <text>{{item}}</text>
       <view class="cate-count" hidden="{{cateTotal[item] === 0}}">{{cateTotal[item]}}</view>
     </view>
@@ -12,16 +18,34 @@
     </view>
     <scroll-view scroll-y class="scroll">
       <view class="food-item" wx:for="{{foods[currentMenu]}}" wx:key="{{index}}">
-        <image-loader class="food-image" original-image="{{item.img}}" mode='widthFix' default-image="../../images/img-load.gif" width="180rpx" height="180rpx" />
+        <image-loader
+          class="food-image"
+          original-image="{{item.img}}"
+          mode="widthFix"
+          default-image="../../images/img-load.gif"
+          width="180rpx"
+          height="180rpx"
+        />
         <view class="food-info">
           <view class="food-name">{{item.name}}</view>
           <view class="sold-count">月售{{item.soldCount}}份</view>
           <view class="food-price">
             <view class="price">￥{{item.price}}/份</view>
             <view class="buy-count">
-              <image hidden="{{item.count === 0}}" src="../../images/reduce.svg" data-index="{{index}}" data-func="reduce" bind:tap="changeCount" />
+              <image
+                hidden="{{item.count === 0}}"
+                src="../../images/reduce.svg"
+                data-index="{{index}}"
+                data-func="reduce"
+                bind:tap="changeCount"
+              />
               <text hidden="{{item.count === 0}}">{{item.count}}</text>
-              <image src="../../images/add.svg" data-index="{{index}}" data-func="add" bind:tap="changeCount" />
+              <image
+                src="../../images/add.svg"
+                data-index="{{index}}"
+                data-func="add"
+                bind:tap="changeCount"
+              />
             </view>
           </view>
         </view>
@@ -32,7 +56,8 @@
 <view class="cart">
   <view class="cart-left">
     <image src="../../images/cart.svg" />
-    <text class="total">￥32</text>
+    <view class="total-count" hidden="{{totalCount === 0}}">{{totalCount}}</view>
+    <text class="total" hidden="{{totalPrice === 0}}">￥{{totalPrice}}</text>
   </view>
   <view class="cart-right">选好了</view>
 </view>

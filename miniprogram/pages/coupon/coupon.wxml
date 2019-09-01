@@ -1,2 +1,18 @@
 <!--miniprogram/pages/coupon/coupon.wxml-->
-<text>miniprogram/pages/coupon/coupon.wxml</text>
+<view class="coupon-page">
+  <view class="coupon">
+    <view class="coupon-left">
+      <view class="money">
+        <text class="money-text">￥</text>
+        <text class="money-number">2</text>
+        <text class="money-text">店铺优惠券</text>
+      </view>
+      <view class="coupon-info">满50元使用</view>
+      <view class="coupon-info">有效期2019.09.01-2019.10.31</view>
+    </view>
+    <view class="coupon-con">
+      <view class="splice-line"></view>
+      <text>立即领取</text>
+    </view>
+  </view>
+</view>
