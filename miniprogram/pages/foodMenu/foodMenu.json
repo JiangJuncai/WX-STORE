@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "image-loader": "/components/imageLoader/image-loader"
-  }
+  },
+  "navigationBarTitleText": "预约点菜"
 }

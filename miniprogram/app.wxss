@@ -6,7 +6,6 @@ page {
 .container {
   display: flex;
   flex-direction: column;
-  background: #f6f6f6;
 }
 .shadow {
   box-shadow: 0 0 20rpx #eeeeee;

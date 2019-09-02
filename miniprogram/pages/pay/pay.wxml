@@ -6,17 +6,20 @@
   <text class="pay-to">付款给：南京熟食店</text>
   <view class="pay-content shadow">
     <view class="pay-title">
-      <text>消费总额    ￥</text>
-      <input type="number" bindinput="watchRMB" placeholder="询问店员后输入" />
+      <text>消费总额 ￥</text>
+      <input type="number" bindinput="watchRMB" placeholder="询问店员后输入" value="{{inputValue}}" />
     </view>
     <view class="money-number">
       <view>￥{{showRMB ? showRMB : '0.00'}}</view>
     </view>
     <view class="pay-button">
       <text>确认支付</text>
-      <button class="pay-btn" type="{{showRMB ? 'primary' : 'default'}}" disabled="{{showRMB ? false : true}}" bindtap="paymoney">
-        确认支付
-      </button>
+      <button
+        class="pay-btn"
+        type="{{showRMB ? 'primary' : 'default'}}"
+        disabled="{{showRMB ? false : true}}"
+        bindtap="paymoney"
+      >确认支付</button>
     </view>
   </view>
 </view>

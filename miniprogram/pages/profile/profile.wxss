@@ -7,7 +7,7 @@
   height: 25vh;
   display: flex;
   align-items: center;
-  background-color: #ffd000;
+  background-color: #ffbd00;
 }
 .userInfo image {
   width: 140rpx;
@@ -22,8 +22,10 @@
   display: flex;
   width: calc(100vw - 40rpx);
   height: 180rpx;
-  margin: 30rpx 0;
+  margin: 20rpx 0;
   background-color: #fff;
+  border-radius: 20rpx;
+  border: 1rpx dashed #eee;
 }
 .p-menu-item,
 .p-service-item {
@@ -43,6 +45,7 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  border: 1rpx dashed #eee;
 }
 .p-service-menu {
   display: flex;

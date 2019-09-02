@@ -4,12 +4,12 @@
     <image src="{{avatarUrl}}" />
     <text>{{nickName}}</text>
   </view>
-  <view class="p-menu shadow">
+  <view class="p-menu">
     <view class="p-menu-item">
       <image src="../../images/dingdan.svg" />
       <text>订单</text>
     </view>
-    <view class="p-menu-item">
+    <view class="p-menu-item" bind:tap="goCouponsPage">
       <image src="../../images/youhuiquan.svg" />
       <text>优惠券</text>
     </view>
@@ -22,7 +22,7 @@
       <text>历史</text>
     </view>
   </view>
-  <view class="p-service shadow">
+  <view class="p-service">
     <view class="p-service-title">
       <text>我的服务</text>
     </view>
