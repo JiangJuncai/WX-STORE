@@ -15,6 +15,10 @@ Page({
     totalCount: 0, // 购买商品的总数
     totalPrice: 0
   },
+  /**
+   * 分类菜单切换
+   * @param {Object} e
+   */
   selectCate: function(e) {
     const index = e.currentTarget.dataset.index
     this.setData({
@@ -22,6 +26,10 @@ Page({
       currentMenu: this.data.categories[index]
     })
   },
+  /**
+   * 修改商品数量
+   * @param {Object} e
+   */
   changeCount: function(e) {
     const currentMenu = this.data.currentMenu
     const index = e.currentTarget.dataset.index
@@ -90,6 +98,10 @@ Page({
     this.setData({
       cartList: cartList
     })
+  },
+  isSelected: function() {
+    const cartList = this.data.cartList
+    console.log(cartList)
   },
 
   /**

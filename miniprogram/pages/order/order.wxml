@@ -1,2 +1,25 @@
 <!--miniprogram/pages/order/order.wxml-->
-<text>miniprogram/pages/order/order.wxml</text>
+<view class="order-page">
+  <view class="order-item">
+    <view class="order-left">
+      <view class="order-title">南京熟食店</view>
+      <view class="order-date">订单日期：2019-09-02</view>
+      <view class="order-info">
+        <view class="food-count">共23件商品</view>
+        <view class="food-price">￥105</view>
+      </view>
+    </view>
+    <view class="order-right">未支付</view>
+  </view>
+  <view class="order-item">
+    <view class="order-left">
+      <view class="order-title">南京熟食店</view>
+      <view class="order-date">订单日期：2019-09-01</view>
+      <view class="order-info">
+        <view class="food-count">共10件商品</view>
+        <view class="food-price">￥50</view>
+      </view>
+    </view>
+    <view class="order-right">已支付</view>
+  </view>
+</view>
